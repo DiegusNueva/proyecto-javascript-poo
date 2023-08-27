@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+    <title>EDcursos</title>
+</head>
+
+<body>
+    <div id="ed-team">
+        <h1>EDcursos</h1>
+        <form id="formCursos">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombreCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Poster
+                        <input type="text" name="posterCurso" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Clases
+                        <input type="number" min="1" name="clasesCurso" required>
+                    </label>
+                </div>
+                <div class="form-item m-py-4">
+                    <input class="button" type="submit" value="Crear Curso">
+                </div>
+            </div>
+        </form>
+        <form id="formProfesores">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombreProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Apellidos
+                        <input type="text" name="apellidosProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Correo
+                        <input type="email" name="emailProfesor" required>
+                    </label>
+                </div>
+                <div class="form-item">
+
+                    <legend>Activo</legend>
+                    <div>
+                        <label>
+                            <input name="activo" type="radio">
+                            Activo
+                        </label>
+                        <label>
+                            <input name="noActivo" type="radio">
+                            No activo
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <legend>Cursos dictados (puedes elegir más de una)</legend>
+                        <div>
+                            <label>
+                                <input checked type="checkbox" name="html" value="cursos">
+                                HTML
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="css" value="cursos">
+                                CSS
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="javascript" value="cursos">
+                                JavaScript
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label>
+                            Calificación
+                            <input type="number" name="emailProfesor" required>
+                        </label>
+                    </div>
+
+                    <div class="form-item m-py-4">
+                        <input class="button" type="submit" value="Crear Profesor">
+                    </div>
+                </div>
+        </form>
+        <form id="formAlumnos">
+            <div class="ed-grid m-grid-4">
+                <div class="form-item">
+                    <label>
+                        Nombre
+                        <input type="text" name="nombreAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Apellidos
+                        <input type="text" name="apellidosAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label>
+                        Correo
+                        <input type="email" name="emailAlumno" required>
+                    </label>
+                </div>
+                <div class="form-item">
+
+                    <legend>Activo</legend>
+                    <div>
+                        <label>
+                            <input name="activo" type="radio">
+                            Activo
+                        </label>
+                        <label>
+                            <input name="noActivo" type="radio">
+                            No activo
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <legend>Cursos tomados (puedes elegir más de una)</legend>
+                        <div>
+                            <label>
+                                <input checked type="checkbox" name="html" value="cursos">
+                                HTML
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="css" value="cursos">
+                                CSS
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="javascript" value="cursos">
+                                JavaScript
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-item m-py-4">
+                        <input class="button" type="submit" value="Crear Alumno">
+                    </div>
+                </div>
+        </form>
+    </div>
+    <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos"></div>
+    <script type="module" src="scripts/index.js"></script>
+</body>
+
+</html>
