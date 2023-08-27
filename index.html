@@ -57,50 +57,51 @@
                         <input type="email" name="emailProfesor" required>
                     </label>
                 </div>
-                <div>
-                    <legend>Activo</legend>
+                
+                    <legend>Activo o no</legend>
                     <div>
                         <label>
-                            <input name="activo" type="radio">
+                            <input name="gender" type="radio" value="true">
                             Activo
                         </label>
                         <label>
-                            <input name="noActivo" type="radio">
+                            <input name="gender" type="radio" value="false">
                             No activo
                         </label>
                     </div>
+                
+                <div>
+                    <legend>Cursos dictados (puedes elegir más de una)</legend>
                     <div>
-                        <legend>Cursos dictados (puedes elegir más de una)</legend>
-                        <div>
-                            <label>
-                                <input checked type="checkbox" name="html" value="cursos">
-                                HTML
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="css" value="cursos">
-                                CSS
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="javascript" value="cursos">
-                                JavaScript
-                            </label>
-                        </div>
+                        <label>
+                            <input checked type="checkbox" name="html" value="html">
+                            HTML
+                        </label>
                     </div>
                     <div>
                         <label>
-                            Calificación
-                            <input type="number" name="emailProfesor" required>
+                            <input type="checkbox" name="css" value="css">
+                            CSS
                         </label>
                     </div>
-
                     <div>
-                        <input class="button" type="submit" value="Crear Profesor">
+                        <label>
+                            <input type="checkbox" name="javascript" value="javascript">
+                            JavaScript
+                        </label>
                     </div>
                 </div>
+                <div>
+                    <label>
+                        Calificación
+                        <input type="number" name="calificacionProfesor" required>
+                    </label>
+                </div>
+
+                <div>
+                    <input class="button" type="submit" value="Crear Profesor">
+                </div>
+            </div>
         </form>
         <form id="formAlumnos">
             <div>
@@ -122,44 +123,44 @@
                         <input type="email" name="emailAlumno" required>
                     </label>
                 </div>
-                <div>
-
-                    <legend>Activo</legend>
+                
+                    <legend>Activo o no</legend>
                     <div>
                         <label>
-                            <input name="activo" type="radio">
+                            <input name="gender" type="radio" value="true">
                             Activo
                         </label>
                         <label>
-                            <input name="noActivo" type="radio">
+                            <input name="gender" type="radio" value="false">
                             No activo
                         </label>
                     </div>
+                
+                <div>
+                    <legend>Cursos a estudiar (puedes elegir más de una)</legend>
                     <div>
-                        <legend>Cursos tomados (puedes elegir más de una)</legend>
-                        <div>
-                            <label>
-                                <input checked type="checkbox" name="html" value="cursos">
-                                HTML
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="css" value="cursos">
-                                CSS
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" name="javascript" value="cursos">
-                                JavaScript
-                            </label>
-                        </div>
+                        <label>
+                            <input checked type="checkbox" name="html" value="html">
+                            HTML
+                        </label>
                     </div>
                     <div>
-                        <input class="button" type="submit" value="Crear Alumno">
+                        <label>
+                            <input type="checkbox" name="css" value="css">
+                            CSS
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="javascript" value="javascript">
+                            JavaScript
+                        </label>
                     </div>
                 </div>
+                <div>
+                    <input class="button" type="submit" value="Crear Alumno">
+                </div>
+            </div>
         </form>
     </div>
     <script type="module" src="scripts/index.js"></script>
